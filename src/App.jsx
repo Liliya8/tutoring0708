@@ -7,7 +7,8 @@ function App() {
   const [count, setCount] = useState(0)
   
   let testLiana = [1,  '', 2,  3,   4, "Lily",  "Liana", 45]
-  
+  const reptiles = ["alligator", "snake", "lizard"];
+
   
   let hello = []
   
@@ -25,7 +26,11 @@ function App() {
       <h1>{testLiana}</h1>
       
 
-      
+      <ol>
+      {reptiles.map((reptile) => (
+        <li>{reptile}</li>
+      ))}
+    </ol>
 
 
       
