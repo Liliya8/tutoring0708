@@ -27,11 +27,10 @@ function App() {
       
 
       <ol>
-      {reptiles.map((reptile) => (
-        <li>{reptile}</li>
+      {reptiles.map(reptile => (
+        <li key={reptile}>{reptile}</li>
       ))}
     </ol>
-
 
       
       <div className="card">
