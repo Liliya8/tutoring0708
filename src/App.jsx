@@ -5,10 +5,12 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
-  let testLiana = [1, 2, 3, 4, "Lily", "Liana", 45]
-  const lily = ["Prosto tak"]
+  
+  let testLiana = [1,  '', 2,  3,   4, "Lily",  "Liana", 45]
+  
+  
   let hello = []
+  
 
   return (
     <>
@@ -21,7 +23,12 @@ function App() {
         </a>
       </div>
       <h1>{testLiana}</h1>
-      <h1>{lily}</h1>
+      
+
+      
+
+
+      
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
